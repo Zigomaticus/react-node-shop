@@ -1,7 +1,7 @@
 const { v4: uuidv4 } = require("uuid");
 const path = require("path");
 const { Device, DeviceInfo } = require("../models/models");
-const { nextTick } = require("process");
+//const { nextTick } = require("process");
 const ApiError = require("../error/ApiError");
 
 class deviceController {
