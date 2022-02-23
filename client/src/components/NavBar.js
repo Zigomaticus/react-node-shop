@@ -8,7 +8,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { Button } from "react-bootstrap";
 
-import Shop from "../pages/Shop";
+import {SHOP_ROUTE} from '../utils/consts'
 import { observer } from "mobx-react-lite";
 
 const NavBar = observer(() => {
@@ -17,7 +17,7 @@ const NavBar = observer(() => {
   return (
     <Navbar bg="dark" variant="dark">
       <Container>
-        <Link style={{ color: "white" }} to={<Shop />}>
+        <Link style={{ color: "white" }} to={SHOP_ROUTE}>
           КупиДевайся
         </Link>
         {user.isAuth ? (
