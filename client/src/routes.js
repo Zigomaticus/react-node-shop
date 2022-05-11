@@ -2,7 +2,7 @@
 import Admin from "./pages/Admin";
 import Basket from "./pages/Basket";
 import Shop from "./pages/Shop";
-import Auth from "./pages/Auth";
+import Auth from "./pages/auth/Auth";
 import DevicePage from "./pages/DevicePage";
 // Utils
 import {

@@ -1,0 +1,36 @@
+.navbar {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(196, 229, 252);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .panel {
+    display: flex;
+
+    button {
+      border: 1px solid black;
+      background-color: rgb(73, 83, 83);
+      color: white;
+      padding: 8px 20px;
+      border-radius: 8px;
+      font-size: 18px;
+
+      &:hover {
+        background-color: white;
+        color: black;
+      }
+    }
+
+    &__logo {
+      margin-left: 40px;
+    }
+  }
+}
