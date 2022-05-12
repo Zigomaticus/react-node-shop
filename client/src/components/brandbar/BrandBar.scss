@@ -1,0 +1,24 @@
+.brands {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    border: 1px solid gray;
+    padding: 5px 10px;
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(196, 229, 252);
+      color: rgb(73, 83, 83);
+    }
+  }
+
+  .red {
+    background-color: red;
+  }
+  .black {
+    background-color: black;
+  }
+}

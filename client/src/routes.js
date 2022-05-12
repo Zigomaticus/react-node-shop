@@ -1,9 +1,9 @@
 // Pages
 import Admin from "./pages/Admin";
 import Basket from "./pages/Basket";
-import Shop from "./pages/Shop";
+import Shop from "./pages/shop/Shop";
 import Auth from "./pages/auth/Auth";
-import DevicePage from "./pages/DevicePage";
+import DevicePage from "./pages/devicepage/DevicePage";
 // Utils
 import {
   ADMIN_ROUTE,

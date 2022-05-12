@@ -4,11 +4,15 @@ export default class UserStore {
   constructor() {
     this._types = [
       { id: 1, name: "Холодильники" },
-      { id: 1, name: "Смартфоны" },
+      { id: 2, name: "Смартфоны" },
+      { id: 3, name: "Ноутбуки" },
+      { id: 4, name: "Телевизоры" },
     ];
     this._brands = [
       { id: 1, name: "Samsung" },
-      { id: 1, name: "Apple" },
+      { id: 2, name: "Apple" },
+      { id: 3, name: "Honor" },
+      { id: 4, name: "Asus" },
     ];
     this._devices = [
       {
@@ -20,26 +24,29 @@ export default class UserStore {
       },
       {
         id: 2,
-        name: "Iphone 12 pro",
+        name: "Honor 10",
         price: 100000,
         rating: 5,
         img: "https://www.hdretail.ru/upload/iblock/8d0/8d01c02a7a68c45e7d021d9d44efab9f.jpg",
       },
       {
         id: 3,
-        name: "Iphone 12 pro",
+        name: "Samsung galaxy",
         price: 100000,
         rating: 5,
         img: "https://www.hdretail.ru/upload/iblock/8d0/8d01c02a7a68c45e7d021d9d44efab9f.jpg",
       },
       {
         id: 4,
-        name: "Iphone 12 pro",
+        name: "Nokia 3310",
         price: 100000,
         rating: 5,
         img: "https://www.hdretail.ru/upload/iblock/8d0/8d01c02a7a68c45e7d021d9d44efab9f.jpg",
       },
     ];
+    this._selectedType = {};
+    this._selectedBrand = {};
+
     makeAutoObservable(this);
   }
 
@@ -52,6 +59,12 @@ export default class UserStore {
   setDevices(devices) {
     this._devices = devices;
   }
+  setSelectedTyp(type) {
+    this._selectedType = type;
+  }
+  setSelectedBrand(brand) {
+    this._selectedBrand = brand;
+  }
 
   get types() {
     return this._types;
@@ -61,5 +74,11 @@ export default class UserStore {
   }
   get devices() {
     return this._devices;
+  }
+  get selectedType() {
+    return this._selectedType;
+  }
+  get selectedBrand() {
+    return this.selectedBrand;
   }
 }

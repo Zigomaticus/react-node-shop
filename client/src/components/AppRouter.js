@@ -3,14 +3,12 @@ import { Routes, Route } from "react-router-dom";
 // Routes
 import { authRoutes, publicRoutes } from "../routes";
 // Pages
-import Shop from "../pages/Shop";
+import Shop from "../pages/shop/Shop";
 // Context
 import { Context } from "../index";
 
 const AppRouter = () => {
   const { user } = useContext(Context);
-
-  console.log(user);
 
   return (
     <div>

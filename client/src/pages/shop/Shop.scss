@@ -1,0 +1,10 @@
+.shop {
+  display: flex;
+  margin-top: 20px;
+
+  .wrapper {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+}

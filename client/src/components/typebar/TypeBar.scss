@@ -1,0 +1,16 @@
+.shop__types {
+  .types {
+    list-style: none;
+
+    li {
+      border: 1px solid rgb(192, 192, 192);
+      padding: 10px 30px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: rgb(196, 229, 252);
+        color: rgb(73, 83, 83);
+      }
+    }
+  }
+}
