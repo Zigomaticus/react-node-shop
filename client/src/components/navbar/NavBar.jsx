@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { observer } from "mobx-react-lite";
 // Context
 import { Context } from "../../index";
@@ -8,6 +8,7 @@ import "./NavBar.scss";
 
 const NavBar = () => {
   const { user } = useContext(Context);
+  let navigate = useNavigate();
 
   return (
     <div className="navbar">
@@ -16,13 +17,17 @@ const NavBar = () => {
       </Link>
       {user.isAuth ? (
         <div className="panel">
-          <button className="panel__admin">Admin</button>
-          <button className="panel__logo">Enter</button>
+          <button onClick={() => navigate("admin")} className="panel__admin">
+            Админ
+          </button>
+          <button onClick={() => navigate("login")} className="panel__logo">
+            Выйти
+          </button>
         </div>
       ) : (
         <div className="panel">
           <button className="panel__logo" onClick={() => user.setIsAuth(true)}>
-            Authorization
+            Авторизация
           </button>
         </div>
       )}

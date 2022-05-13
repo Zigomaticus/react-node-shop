@@ -1,5 +1,5 @@
 // Pages
-import Admin from "./pages/Admin";
+import Admin from "./pages/admin/Admin";
 import Basket from "./pages/Basket";
 import Shop from "./pages/shop/Shop";
 import Auth from "./pages/auth/Auth";
